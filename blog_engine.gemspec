@@ -7,11 +7,11 @@ require "blog_engine/version"
 Gem::Specification.new do |spec|
   spec.name        = "blog_engine"
   spec.version     = BlogEngine::VERSION
-  spec.authors     = ["TODO: Write your name"]
-  spec.email       = ["TODO: Write your email address"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of BlogEngine."
-  spec.description = "TODO: Description of BlogEngine."
+  spec.authors     = ["sunakan"]
+  spec.email       = ["sunakan03@gmail.com"]
+  spec.homepage    = "https://github.com/sunakan/rails6-blog-engine"
+  spec.summary     = "練習"
+  spec.description = "練習"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  spec.add_dependency "rails", "~> 6.0.0.rc1"
+  spec.add_dependency "rails", "6.0.0.rc1"
 
-  spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "pg", "~> 1.1.4"
 end

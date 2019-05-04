@@ -9,7 +9,7 @@ namespace :blog_engine do
 
     # rake blog_engine:webpacker:compile
     desc "webpackを利用して、digests付きで管理下にあるファイル群をコンパイル"
-    task :compile: [:yarn_install, :environment] do
+    task compile: [:yarn_install, :environment] do
       Webpacker.with_node_env("production") do
         if BlogEngine.webpacker.commands.compile
           # 成功時の処理

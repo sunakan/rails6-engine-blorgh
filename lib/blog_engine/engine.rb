@@ -9,7 +9,7 @@ module BlogEngine
     end
 
     initializer "webpacker.proxy" do |app|
-      insesrt_middleware = begin
+      insert_middleware = begin
                              BlogEngine.webpacker.config.dev_server.present?
                            rescue
                              nil

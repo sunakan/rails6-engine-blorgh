@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "pg", "~> 1.1.4"
   spec.add_development_dependency "rspec-rails"
+  spec.add_development_dependency "factory_bot"
 end

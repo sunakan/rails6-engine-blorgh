@@ -67,6 +67,8 @@ GEM
     crass (1.0.4)
     diff-lcs (1.3)
     erubi (1.8.0)
+    factory_bot (5.0.2)
+      activesupport (>= 4.2.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.6.0)
@@ -155,6 +157,7 @@ PLATFORMS
 
 DEPENDENCIES
   blog_engine!
+  factory_bot
   pg (~> 1.1.4)
   rspec-rails
 

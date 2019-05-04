@@ -16,7 +16,7 @@ module BlogEngine
                            end
       next unless insert_middleware
 
-      app.middleware.inser_before(
+      app.middleware.insert_before(
         0, Webpacker::DevServerProxy,
         ssl_verify_none: true,
         webpacker: BlogEngine.webpacker

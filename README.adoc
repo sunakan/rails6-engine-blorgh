@@ -1,28 +1,32 @@
-# BlogEngine
-Short description and motivation.
+= Railsエンジン
 
-## Usage
-How to use my plugin.
+image:https://img.shields.io/badge/license-MIT-blue.svg[MIT, link=MIT-LICENSE]
 
-## Installation
-Add this line to your application's Gemfile:
+== 使い方
 
-```ruby
-gem 'blog_engine'
-```
+* Railsエンジンを親アプリにマウント
++
+.config/routes.rb
+----
+mount BlogEngine::Engine, at: "/blog"
+----
 
-And then execute:
-```bash
+* マウントできたかの確認(静的ページにアクセス)
+** 親アプリ側で/blogにアクセスして、Fugaがいっぱい縦にならんでいれば成功
+
+* エンジン側のMigrationを親アプリにコピー(しなくても静的ページにはアクセス可能)
++
+----
+$ bundle exec rails blog_engine:install:migrations
+----
+
+== インストール方法(野良gemのためrubygemに公開していない)
+
+.Gemfile
+----
+gem "blog_engine", git: "https://github.com/sunakan/rails6-blog-engine.git"
+----
+
+----
 $ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install blog_engine
-```
-
-## Contributing
-Contribution directions go here.
-
-## License
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+----

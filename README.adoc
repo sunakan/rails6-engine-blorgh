@@ -2,6 +2,12 @@
 
 image:https://img.shields.io/badge/license-MIT-blue.svg[MIT, link=MIT-LICENSE]
 
+[cols="1,1", options="autowidth"]
+|===
+|Ruby|2.6.3
+|Rails|6.0.0.rc1
+|===
+
 == 使い方
 
 * Railsエンジンを親アプリにマウント
@@ -27,6 +33,14 @@ $ bundle exec rails blog_engine:install:migrations
 gem "blog_engine", git: "https://github.com/sunakan/rails6-blog-engine.git"
 ----
 
+* bundle install
++
 ----
 $ bundle
 ----
+
+== Webpacker within Railsエンジン
+
+* rails/webpackerが公式に方法を提示している
+
+link:https://github.com/rails/webpacker/blob/master/docs/engines.md[https://github.com/rails/webpacker/blob/master/docs/engines.md]

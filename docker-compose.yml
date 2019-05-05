@@ -34,10 +34,8 @@ services:
   chrome:
     container_name: chrome
     image: selenium/standalone-chrome
-    #image: selenium/standalone-chrome-debug:3.141.59-gold
     ports:
       - 4444:4444
-      #- 5900:5900
 
 volumes:
   bundle_install:

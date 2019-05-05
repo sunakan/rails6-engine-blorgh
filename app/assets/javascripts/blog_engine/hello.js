@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener("load", functiotn() {
   console.log("==============");
   console.log("Hello Sprocket");
   console.log("==============");
@@ -8,4 +8,4 @@ window.onload = function() {
   var h3 = document.createElement("h3");
   h3.innerHTML = "Sprocketで追加したh3";
   document.getElementById("sprocket").appendChild(h3);
-};
+});

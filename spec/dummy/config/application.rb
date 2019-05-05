@@ -25,6 +25,11 @@ module Dummy
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    #config.middleware.use(
+    #  "Rack::Static",
+    #  urls: ["/blog_engine_packs"], root: "blog_engin/public"
+    #)
   end
 end
 

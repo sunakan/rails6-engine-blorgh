@@ -10,3 +10,6 @@ docker-compose.yml
 .rubocop.yml
 vendor/bundle
 MIT-LICENSE
+spec/dummy/tmp/*
+spec/dummy/log/*
+*.swp

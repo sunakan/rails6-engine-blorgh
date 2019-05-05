@@ -439,3 +439,6 @@ tags
 
 
 # End of https://www.gitignore.io/api/vim,node,ruby,rails
+
+spec/dummy/tmp/*
+!spec/dummy/tmp/.keep

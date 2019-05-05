@@ -22,19 +22,4 @@ namespace :blog_engine do
       end
     end
   end
-
-  desc "taskテスト"
-  task hello: :environment do
-    puts "===="
-    puts Rails.env
-    puts "===="
-  end
-
-  desc "taskテスト2"
-  task hello2: [:hello] do
-    puts "===="
-    puts "hello"
-    puts Rails.env
-    puts "===="
-  end
 end

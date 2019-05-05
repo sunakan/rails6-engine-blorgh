@@ -12,12 +12,29 @@ namespace :blog_engine do
     task compile: [:yarn_install, :environment] do
       Webpacker.with_node_env("production") do
         if BlogEngine.webpacker.commands.compile
+          puts "成功しました"
           # 成功時の処理
         else
+          puts "失敗..."
           # 失敗時の処理
           exit!
         end
       end
     end
+  end
+
+  desc "taskテスト"
+  task hello: :environment do
+    puts "===="
+    puts Rails.env
+    puts "===="
+  end
+
+  desc "taskテスト2"
+  task hello2: [:hello] do
+    puts "===="
+    puts "hello"
+    puts Rails.env
+    puts "===="
   end
 end

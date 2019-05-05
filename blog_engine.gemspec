@@ -30,6 +30,11 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "webpacker", "~> 4.0"
   spec.add_development_dependency "pg", "~> 1.1.4"
-  spec.add_development_dependency "rspec-rails"
+  # rspec用
   spec.add_development_dependency "factory_bot_rails"
+  spec.add_development_dependency "rspec-rails"
+  spec.add_development_dependency "capybara", ">= 2.15"
+  spec.add_development_dependency "webdrivers"
+  spec.add_development_dependency "sass-rails"
+  spec.add_development_dependency "puma"
 end

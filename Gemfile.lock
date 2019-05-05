@@ -170,6 +170,7 @@ DEPENDENCIES
   factory_bot_rails
   pg (~> 1.1.4)
   rspec-rails
+  webpacker (~> 4.0)
 
 BUNDLED WITH
    1.17.3

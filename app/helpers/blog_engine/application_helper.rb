@@ -1,8 +1,8 @@
-#require "webpacker/helper"
+require "webpacker/helper"
 
 module BlogEngine
   module ApplicationHelper
-    #include ::Webpacker::Helper
+    include ::Webpacker::Helper
     def current_webpacker_instance
       BlogEngine.webpacker
     end

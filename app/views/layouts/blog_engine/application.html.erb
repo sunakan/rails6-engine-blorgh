@@ -5,8 +5,13 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
-  <%= stylesheet_pack_tag "blog_engine/application", media: "all" %>
-  <%= javascript_pack_tag "blog_engine/application" %>
+  <%# 勉強用にsprocketを利用したassetsも見たい %>
+  <%= stylesheet_link_tag    "blog_engine/application", media: "all" %>
+  <%= javascript_include_tag "blog_engine/application" %>
+
+  <%# webpackerを利用したassets参照 %>
+  <%#= stylesheet_pack_tag "blog_engine/application", media: "all" %>
+  <%#= javascript_pack_tag "blog_engine/application" %>
 </head>
 <body>
 

@@ -1,4 +1,4 @@
-window.addEventListener("load", functiotn() {
+window.addEventListener("load", function() {
   console.log("==============");
   console.log("Hello Sprocket");
   console.log("==============");

@@ -442,3 +442,4 @@ tags
 
 spec/dummy/tmp/*
 !spec/dummy/tmp/.keep
+public/blog_engine_packs

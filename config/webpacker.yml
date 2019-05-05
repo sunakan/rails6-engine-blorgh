@@ -3,7 +3,7 @@
 default: &default
   source_path: app/frontend/blog_engine
   source_entry_path: packs
-  public_root_path: ../public
+  public_root_path: public
   public_output_path: blog_engine_packs
   cache_path: tmp/cache/webpacker
   check_yarn_integrity: false

@@ -3,11 +3,6 @@
 version: "3.7"
 
 services:
-  datastore:
-    image: busybox
-    volumes:
-      - bundle_install:/app/vendor/bundle
-
   app:
     working_dir: /app
     image: blog_engine_app
@@ -16,7 +11,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/app
-      - ~/bundle_install:/app/vendor/bundle
+      - ~/bundle-install:/app/vendor/bundle
     environment:
       - TZ=Asia/Tokyo
     links:
@@ -36,7 +31,3 @@ services:
     image: selenium/standalone-chrome
     ports:
       - 4444:4444
-
-volumes:
-  bundle_install:
-    driver: local
